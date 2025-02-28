@@ -1,0 +1,18 @@
+disabled_rules:
+  - trailing_whitespace
+  - force_cast
+
+opt_in_rules:
+  - unused_closure_parameter
+  - vertical_parameter_alignment_on_call
+
+line_length: 100
+identifier_name:
+  min_length: 3
+  max_length: 40
+
+type_name:
+  min_length: 3
+  max_length: 50
+
+reporter: xcode
