@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: - User Model
 struct UserModel {
     let id: String
     let name: String?

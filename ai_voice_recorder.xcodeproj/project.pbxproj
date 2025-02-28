@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5527584F2D71F96600D6390A /* TranscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527584E2D71F96600D6390A /* TranscriptionModel.swift */; };
+		552758512D71F98100D6390A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552758502D71F98100D6390A /* CoreDataManager.swift */; };
+		552758532D71F99A00D6390A /* AiSummarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552758522D71F99A00D6390A /* AiSummarizer.swift */; };
+		552758552D71F9A700D6390A /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552758542D71F9A700D6390A /* AudioRecorder.swift */; };
+		552758572D71F9B200D6390A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552758562D71F9B200D6390A /* AuthService.swift */; };
+		552758592D71FA1200D6390A /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552758582D71FA1200D6390A /* SignInViewModel.swift */; };
+		5527585B2D71FA2500D6390A /* TransciptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527585A2D71FA2500D6390A /* TransciptionViewModel.swift */; };
 		5551810C2D70E7A9000CA69B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551810B2D70E7A9000CA69B /* App.swift */; };
 		5551810E2D70E7A9000CA69B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551810D2D70E7A9000CA69B /* ContentView.swift */; };
 		555181102D70E7AA000CA69B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5551810F2D70E7AA000CA69B /* Assets.xcassets */; };
 		555181132D70E7AA000CA69B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555181122D70E7AA000CA69B /* Preview Assets.xcassets */; };
 		5551811A2D70EFC3000CA69B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555181192D70EFC3000CA69B /* SignInView.swift */; };
 		5551811C2D70F772000CA69B /* VoiceTranscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551811B2D70F772000CA69B /* VoiceTranscriptionView.swift */; };
-		5551811E2D70F788000CA69B /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551811D2D70F788000CA69B /* HistoryView.swift */; };
-		555181202D70F79C000CA69B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551811F2D70F79C000CA69B /* ProfileView.swift */; };
+		5551811E2D70F788000CA69B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551811D2D70F788000CA69B /* HomeView.swift */; };
+		555181202D70F79C000CA69B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551811F2D70F79C000CA69B /* SettingsView.swift */; };
 		555181232D710B3C000CA69B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555181222D710B3C000CA69B /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5527584E2D71F96600D6390A /* TranscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionModel.swift; sourceTree = "<group>"; };
+		552758502D71F98100D6390A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		552758522D71F99A00D6390A /* AiSummarizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiSummarizer.swift; sourceTree = "<group>"; };
+		552758542D71F9A700D6390A /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		552758562D71F9B200D6390A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		552758582D71FA1200D6390A /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		5527585A2D71FA2500D6390A /* TransciptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransciptionViewModel.swift; sourceTree = "<group>"; };
 		555181082D70E7A9000CA69B /* ai_voice_recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ai_voice_recorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5551810B2D70E7A9000CA69B /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		5551810D2D70E7A9000CA69B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,8 +40,8 @@
 		555181122D70E7AA000CA69B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		555181192D70EFC3000CA69B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		5551811B2D70F772000CA69B /* VoiceTranscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceTranscriptionView.swift; sourceTree = "<group>"; };
-		5551811D2D70F788000CA69B /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		5551811F2D70F79C000CA69B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5551811D2D70F788000CA69B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5551811F2D70F79C000CA69B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		555181222D710B3C000CA69B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				555181222D710B3C000CA69B /* UserModel.swift */,
+				5527584E2D71F96600D6390A /* TranscriptionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +115,10 @@
 		555181262D71F1C6000CA69B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				552758502D71F98100D6390A /* CoreDataManager.swift */,
+				552758522D71F99A00D6390A /* AiSummarizer.swift */,
+				552758542D71F9A700D6390A /* AudioRecorder.swift */,
+				552758562D71F9B200D6390A /* AuthService.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -107,10 +126,10 @@
 		555181272D71F1D6000CA69B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5551811D2D70F788000CA69B /* HistoryView.swift */,
-				5551811F2D70F79C000CA69B /* ProfileView.swift */,
 				555181192D70EFC3000CA69B /* SignInView.swift */,
 				5551811B2D70F772000CA69B /* VoiceTranscriptionView.swift */,
+				5551811D2D70F788000CA69B /* HomeView.swift */,
+				5551811F2D70F79C000CA69B /* SettingsView.swift */,
 				5551810D2D70E7A9000CA69B /* ContentView.swift */,
 			);
 			path = Views;
@@ -119,6 +138,8 @@
 		555181282D71F1E0000CA69B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				552758582D71FA1200D6390A /* SignInViewModel.swift */,
+				5527585A2D71FA2500D6390A /* TransciptionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -203,9 +224,16 @@
 				5551811C2D70F772000CA69B /* VoiceTranscriptionView.swift in Sources */,
 				555181232D710B3C000CA69B /* UserModel.swift in Sources */,
 				5551811A2D70EFC3000CA69B /* SignInView.swift in Sources */,
-				5551811E2D70F788000CA69B /* HistoryView.swift in Sources */,
+				552758572D71F9B200D6390A /* AuthService.swift in Sources */,
+				552758592D71FA1200D6390A /* SignInViewModel.swift in Sources */,
+				5551811E2D70F788000CA69B /* HomeView.swift in Sources */,
+				552758532D71F99A00D6390A /* AiSummarizer.swift in Sources */,
+				552758552D71F9A700D6390A /* AudioRecorder.swift in Sources */,
+				5527584F2D71F96600D6390A /* TranscriptionModel.swift in Sources */,
 				5551810E2D70E7A9000CA69B /* ContentView.swift in Sources */,
-				555181202D70F79C000CA69B /* ProfileView.swift in Sources */,
+				552758512D71F98100D6390A /* CoreDataManager.swift in Sources */,
+				555181202D70F79C000CA69B /* SettingsView.swift in Sources */,
+				5527585B2D71FA2500D6390A /* TransciptionViewModel.swift in Sources */,
 				5551810C2D70E7A9000CA69B /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
