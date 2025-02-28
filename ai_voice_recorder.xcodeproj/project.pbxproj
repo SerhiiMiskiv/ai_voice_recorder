@@ -15,6 +15,7 @@
 		552758592D71FA1200D6390A /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552758582D71FA1200D6390A /* SignInViewModel.swift */; };
 		5527585B2D71FA2500D6390A /* TransciptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527585A2D71FA2500D6390A /* TransciptionViewModel.swift */; };
 		5527585E2D71FFF800D6390A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5527585D2D71FFF800D6390A /* .swiftlint.yml */; };
+		552758612D72055200D6390A /* AppleSignInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552758602D72055200D6390A /* AppleSignInDelegate.swift */; };
 		5551810C2D70E7A9000CA69B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551810B2D70E7A9000CA69B /* App.swift */; };
 		5551810E2D70E7A9000CA69B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551810D2D70E7A9000CA69B /* ContentView.swift */; };
 		555181102D70E7AA000CA69B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5551810F2D70E7AA000CA69B /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		552758582D71FA1200D6390A /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		5527585A2D71FA2500D6390A /* TransciptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransciptionViewModel.swift; sourceTree = "<group>"; };
 		5527585D2D71FFF800D6390A /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		552758602D72055200D6390A /* AppleSignInDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInDelegate.swift; sourceTree = "<group>"; };
 		555181082D70E7A9000CA69B /* ai_voice_recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ai_voice_recorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5551810B2D70E7A9000CA69B /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		5551810D2D70E7A9000CA69B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5527585F2D72052A00D6390A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				552758562D71F9B200D6390A /* AuthService.swift */,
+				552758602D72055200D6390A /* AppleSignInDelegate.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		555180FF2D70E7A8000CA69B = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +132,7 @@
 				552758502D71F98100D6390A /* CoreDataManager.swift */,
 				552758522D71F99A00D6390A /* AiSummarizer.swift */,
 				552758542D71F9A700D6390A /* AudioRecorder.swift */,
-				552758562D71F9B200D6390A /* AuthService.swift */,
+				5527585F2D72052A00D6390A /* Auth */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -258,6 +269,7 @@
 				552758552D71F9A700D6390A /* AudioRecorder.swift in Sources */,
 				5527584F2D71F96600D6390A /* TranscriptionModel.swift in Sources */,
 				5551810E2D70E7A9000CA69B /* ContentView.swift in Sources */,
+				552758612D72055200D6390A /* AppleSignInDelegate.swift in Sources */,
 				552758512D71F98100D6390A /* CoreDataManager.swift in Sources */,
 				555181202D70F79C000CA69B /* SettingsView.swift in Sources */,
 				5527585B2D71FA2500D6390A /* TransciptionViewModel.swift in Sources */,
