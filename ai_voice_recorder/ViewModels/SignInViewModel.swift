@@ -19,7 +19,7 @@ class SignInViewModel: ObservableObject {
         errorMessage = nil
         
         authService.signInWithApple { [weak self] result in
-            DispatchQueue.main.async {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 guard let self = self else { return }
                 self.isLoading = false
                 
