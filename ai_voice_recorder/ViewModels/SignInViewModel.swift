@@ -14,6 +14,10 @@ class SignInViewModel: ObservableObject {
     
     private let authService = AuthService()
     
+    init() {
+        loadSavedUser()
+    }
+    
     func signIn() {
         isLoading = true
         errorMessage = nil
@@ -26,10 +30,16 @@ class SignInViewModel: ObservableObject {
                 switch result {
                 case .success(let user):
                     self.user = user
+                    UserSessionManager.shared.save(user)
                 case .failure(let error):
                     self.errorMessage = error.localizedDescription
                 }
             }
         }
+    }
+    
+    private func loadSavedUser() {
+        guard let savedUser = UserSessionManager.shared.getUser() else { return }
+        self.user = savedUser
     }
 }
