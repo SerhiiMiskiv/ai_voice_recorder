@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SignInView: View {
-    @StateObject private var viewModel = SignInViewModel()
+    @StateObject private var viewModel = SignInViewModel(authService: AuthServiceImpl())
     
     var body: some View {
         NavigationStack {

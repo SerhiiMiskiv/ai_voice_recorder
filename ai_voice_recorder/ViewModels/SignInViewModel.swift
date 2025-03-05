@@ -12,9 +12,10 @@ class SignInViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
     
-    private let authService = AuthService()
+    private var authService: AuthServiceProtocol!
     
-    init() {
+    init(authService: AuthServiceProtocol) {
+        self.authService = authService
         loadSavedUser()
     }
     

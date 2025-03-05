@@ -23,13 +23,15 @@ class AppleSignInDelegate: NSObject, ASAuthorizationControllerDelegate {
                                  email: appleIdCredentials.email)
             completion(.success(user))
         } else {
-            completion(.failure(NSError(domain: "AppleSignIn",
-                                        code: -1,
-                                        userInfo: [
-                                            NSLocalizedDescriptionKey:
-                                                "Failed to get credentials via Apple Sign In"
-                                        ]
-                                       )
+            completion(
+                .failure(
+                    NSError(
+                        domain: "AppleSignIn",
+                        code: -1,
+                        userInfo: [
+                            NSLocalizedDescriptionKey: "Failed to get credentials via Apple Sign In"
+                        ]
+                    )
                 )
             )
         }

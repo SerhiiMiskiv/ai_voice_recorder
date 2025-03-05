@@ -8,7 +8,11 @@
 import Foundation
 import AuthenticationServices
 
-class AuthService {
+protocol AuthServiceProtocol {
+    func signInWithApple(completion: @escaping (Result<UserModel, Error>) -> Void)
+}
+
+class AuthServiceImpl: AuthServiceProtocol {
     func signInWithApple(completion: @escaping (Result<UserModel, Error>) -> Void) {
 //        TODO: Uncomment this once Apple Sign In is available
 //        let request = ASAuthorizationAppleIDProvider().createRequest()
