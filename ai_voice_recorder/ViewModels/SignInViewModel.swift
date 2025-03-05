@@ -16,7 +16,7 @@ class SignInViewModel: ObservableObject {
     
     init(authService: AuthServiceProtocol) {
         self.authService = authService
-        loadSavedUser()
+//        loadSavedUser()
     }
     
     func signIn() {
