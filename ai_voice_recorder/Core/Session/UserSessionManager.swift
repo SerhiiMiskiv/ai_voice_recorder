@@ -20,7 +20,7 @@ class UserSessionManager {
         }
     }
     
-    func getUser() -> UserModel? {
+    func getLoggedUser() -> UserModel? {
         guard let storedUserData = userDefaults.data(forKey: userSessionKey),
               let user = try? JSONDecoder().decode(UserModel.self,
                                                    from: storedUserData) else {

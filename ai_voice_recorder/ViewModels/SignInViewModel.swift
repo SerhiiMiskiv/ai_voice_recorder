@@ -39,7 +39,7 @@ class SignInViewModel: ObservableObject {
     }
     
     private func loadSavedUser() {
-        guard let savedUser = UserSessionManager.shared.getUser() else { return }
+        guard let savedUser = UserSessionManager.shared.getLoggedUser() else { return }
         self.user = savedUser
     }
 }
