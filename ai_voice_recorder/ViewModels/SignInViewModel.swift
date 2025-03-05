@@ -8,16 +8,34 @@
 import Foundation
 
 class SignInViewModel: ObservableObject {
+    
+    // MARK: - Properties
+    
     @Published var user: UserModel?
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
     
     private var authService: AuthServiceProtocol!
     
+    // MARK: - Initialization
+    
     init(authService: AuthServiceProtocol) {
         self.authService = authService
-//        loadSavedUser()
+        loadSavedUser()
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(resetViewModel),
+            name: .userDidLogout,
+            object: nil
+        )
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    // MARK: - Public
     
     func signIn() {
         isLoading = true
@@ -39,8 +57,19 @@ class SignInViewModel: ObservableObject {
         }
     }
     
+    // MARK: - Private
+    
     private func loadSavedUser() {
         guard let savedUser = UserSessionManager.shared.getLoggedUser() else { return }
         self.user = savedUser
+    }
+    
+    @objc private func resetViewModel() {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.user = nil
+            self.isLoading = false
+            self.errorMessage = nil
+        }
     }
 }

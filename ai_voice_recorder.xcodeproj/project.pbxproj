@@ -25,6 +25,7 @@
 		5551811E2D70F788000CA69B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551811D2D70F788000CA69B /* HomeView.swift */; };
 		555181202D70F79C000CA69B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551811F2D70F79C000CA69B /* SettingsView.swift */; };
 		555181232D710B3C000CA69B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555181222D710B3C000CA69B /* UserModel.swift */; };
+		5590115B2D78BACC009D8C3E /* NotificationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5590115A2D78BACC009D8C3E /* NotificationExtensions.swift */; };
 		55BDEE2A2D761DE100C329B5 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDEE292D761DE100C329B5 /* UserSessionManager.swift */; };
 		55BDEE2C2D76287A00C329B5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDEE2B2D76287A00C329B5 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		5551811D2D70F788000CA69B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5551811F2D70F79C000CA69B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		555181222D710B3C000CA69B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		5590115A2D78BACC009D8C3E /* NotificationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtensions.swift; sourceTree = "<group>"; };
 		55BDEE292D761DE100C329B5 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
 		55BDEE2B2D76287A00C329B5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		55BDEE312D76334300C329B5 /* ai_voice_recorder_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ai_voice_recorder_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +159,7 @@
 		555181262D71F1C6000CA69B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				559011592D78BAB1009D8C3E /* Extensions */,
 				5527585F2D72052A00D6390A /* Auth */,
 				55BDEE282D761DBA00C329B5 /* Session */,
 				552758502D71F98100D6390A /* CoreDataManager.swift */,
@@ -193,6 +196,14 @@
 			children = (
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		559011592D78BAB1009D8C3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5590115A2D78BACC009D8C3E /* NotificationExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		55BDEE282D761DBA00C329B5 /* Session */ = {
@@ -342,6 +353,7 @@
 				5551811E2D70F788000CA69B /* HomeView.swift in Sources */,
 				552758532D71F99A00D6390A /* AiSummarizer.swift in Sources */,
 				552758552D71F9A700D6390A /* AudioRecorder.swift in Sources */,
+				5590115B2D78BACC009D8C3E /* NotificationExtensions.swift in Sources */,
 				5527584F2D71F96600D6390A /* TranscriptionModel.swift in Sources */,
 				5551810E2D70E7A9000CA69B /* ContentView.swift in Sources */,
 				552758612D72055200D6390A /* AppleSignInDelegate.swift in Sources */,

@@ -23,8 +23,9 @@ struct HomeView: View {
             }
             
             Button {
-                viewModel.logout()
-                dismiss()
+                viewModel.logout {
+                    dismiss()
+                }
             } label: {
                 Text("Log Out")
                   .foregroundColor(.white)

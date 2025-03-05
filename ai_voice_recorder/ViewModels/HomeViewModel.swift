@@ -15,13 +15,20 @@ class HomeViewModel: ObservableObject {
         loadSavedUser()
     }
     
-    func logout() {
+    func logout(completion: @escaping () -> Void) {
         isLoading = true
         UserSessionManager.shared.clear()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             self.user = nil
             self.isLoading = false
+            
+            NotificationCenter.default.post(
+                name: .userDidLogout,
+                object: nil
+            )
+            
+            completion()
         }
     }
     
